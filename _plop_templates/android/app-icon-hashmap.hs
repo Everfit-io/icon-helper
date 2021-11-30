@@ -1,0 +1,2 @@
+"{{team}}" to LABEL.APP_ICON_BRANDING_{{team}},
+        // CODE_GEN_APP_ICON_HASHMAP DONT REMOVE THIS
