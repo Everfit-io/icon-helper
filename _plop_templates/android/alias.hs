@@ -9,4 +9,4 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity-alias>
-        // CODE_GEN_ALIAS DONT REMOVE THIS
+        <!-- CODE_GEN_ALIAS DONT REMOVE THIS -->
