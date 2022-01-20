@@ -1,4 +1,4 @@
-      <activity-alias
+<activity-alias
                 android:name=".splash.AppIconBranding{{team}}"
                 android:label="@string/app_name"
                 android:icon="@mipmap/ic_branding_launcher_{{team}}"
