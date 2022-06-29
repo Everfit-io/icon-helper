@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "team": "61fc080bca8786001b1231ee",
+  "team": "628ef6c6722cd30014325e84",
   "iconBasePath": "ic_branding_launcher",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
