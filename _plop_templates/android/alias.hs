@@ -3,6 +3,7 @@
                 android:label="@string/app_name"
                 android:icon="@mipmap/ic_branding_launcher_{{team}}"
                 android:enabled="false"
+                android:exported="true"
                 android:targetActivity=".splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
