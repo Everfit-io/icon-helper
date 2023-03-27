@@ -1,5 +1,6 @@
 const fs = require("fs");
 const config = require("./config");
+const _ = require("lodash");
 const packageJson = require("./package.json");
 // File destination.txt will be created or overwritten by default.
 let rawdata = fs.readFileSync("./package.json");
@@ -13,26 +14,19 @@ if (!teamId) {
 
 let paths = [
   `res/mipmap-anydpi-v26/${iconBasePath}_${teamId}.xml`,
-  `res/mipmap-mdpi/${iconBasePath}_${teamId}.png`,
-  `res/mipmap-mdpi/${iconBasePath}_${teamId}_adaptive_back.png`,
-  `res/mipmap-mdpi/${iconBasePath}_${teamId}_adaptive_fore.png`,
-  `res/mipmap-hdpi/${iconBasePath}_${teamId}.png`,
-  `res/mipmap-hdpi/${iconBasePath}_${teamId}_adaptive_back.png`,
-  `res/mipmap-hdpi/${iconBasePath}_${teamId}_adaptive_fore.png`,
-  `res/mipmap-xhdpi/${iconBasePath}_${teamId}.png`,
-  `res/mipmap-xhdpi/${iconBasePath}_${teamId}_adaptive_back.png`,
-  `res/mipmap-xhdpi/${iconBasePath}_${teamId}_adaptive_fore.png`,
-  `res/mipmap-xxhdpi/${iconBasePath}_${teamId}.png`,
-  `res/mipmap-xxhdpi/${iconBasePath}_${teamId}_adaptive_back.png`,
-  `res/mipmap-xxhdpi/${iconBasePath}_${teamId}_adaptive_fore.png`,
   `res/mipmap-xxxhdpi/${iconBasePath}_${teamId}.png`,
   `res/mipmap-xxxhdpi/${iconBasePath}_${teamId}_adaptive_back.png`,
   `res/mipmap-xxxhdpi/${iconBasePath}_${teamId}_adaptive_fore.png`
 ];
 paths.map(path => {
+  let newPath = path;
+  if (_.includes(newPath, "xxxhdpi")) {
+    newPath = _.replace(newPath, "-xxxhdpi", "");
+  }
+  
   fs.copyFileSync(
     `./${iconBasePath}_${teamId}/${path}`,
-    `${target}/app/src/main/${path}`,
+    `${target}/app/src/main/${newPath}`,
     fs.constants.COPYFILE_FICLONE
   );
   console.log(`${path} was copied`);
