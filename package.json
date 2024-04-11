@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+<<<<<<< HEAD
   "team": "628ef6c6722cd30014325e84",
+=======
+  "team": "63aa6372ec1c610016d92054",
+>>>>>>> 848a3eabd1e7d6fc56dd0b7087f9dbc2b181ec81
   "iconBasePath": "ic_branding_launcher",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.21",
     "plop": "^3.0.0"
   }
 }
