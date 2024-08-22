@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+  <background android:drawable="@mipmap/ic_branding_launcher_64d44da2338fb0001e9126b3_background"/>
+  <foreground android:drawable="@mipmap/ic_branding_launcher_64d44da2338fb0001e9126b3_foreground"/>
+  <monochrome android:drawable="@mipmap/ic_branding_launcher_64d44da2338fb0001e9126b3_monochrome"/>
+</adaptive-icon>
