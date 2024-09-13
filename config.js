@@ -1,3 +1,3 @@
 module.exports = {
-  projectUrl: "/Users/everfit-mac/StudioProjects/everfit-android"
+  projectUrl: "/users/lambui/androidstudioprojects/everfit-android"
 };
